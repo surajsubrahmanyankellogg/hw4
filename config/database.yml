@@ -22,4 +22,7 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  database: software_susan_production
+  username: software_susan
+  password: <%= ENV["SOFTWARE_SUSAN_DATABASE_PASSWORD"] %>

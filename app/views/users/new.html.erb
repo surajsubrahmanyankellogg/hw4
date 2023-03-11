@@ -1,5 +1,6 @@
 <h1>New User Account</h1>
 
+
 <%= form_with :model => @user do |form| %>
   <p>
     <%= form.label "username" %>
@@ -11,9 +12,9 @@
   </p>
   <p>
     <%= form.label "password" %>
-    <%= form.text_field "password" %>
+    <%= form.password_field "password" %>
   </p>
   <p>
-    <%= form.submit "Sign up" %>
+    <button class="btn btn-primary" type="submit"><%= form.submit "Sign up" %></button>
   </p>
 <% end %>
